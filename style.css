@@ -17,7 +17,7 @@ header {
 }
 
 .lcc-logo {
-    width: 80px;
+    width: 160px;
     animation: fadeInScale 1s ease-in-out;
     margin-bottom: 7px;
 }
@@ -142,3 +142,4 @@ footer {
         width: 65px;
     }
 }
+
