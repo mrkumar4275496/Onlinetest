@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Header ===== */
+header {
+    background: linear-gradient(90deg, #d62828, #f77f00);
+    color: white;
+    text-align: center;
+    padding: 15px 0 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+}
+
+.lcc-logo {
+    width: 80px;
+    animation: fadeInScale 1s ease-in-out;
+    margin-bottom: 7px;
+}
+
+@keyframes fadeInScale {
+    0% { opacity: 0; transform: scale(0.8);}
+    100% { opacity: 1; transform: scale(1);}
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-top: 8px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    background: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c') no-repeat center/cover;
+    position: relative;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* ===== Button Style ===== */
+.btn {
+    background: linear-gradient(45deg, #d62828, #f77f00);
+    padding: 12px 30px;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #f77f00, #d62828);
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== Instructions Section ===== */
+.instructions {
+    background: #f8f9fa;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.instructions h3 {
+    font-size: 1.8rem;
+    color: #d62828;
+    margin-bottom: 25px;
+}
+
+.instructions ul {
+    max-width: 650px;
+    margin: auto;
+    text-align: left;
+    list-style: none;
+}
+
+.instructions ul li {
+    background: white;
+    padding: 15px 18px;
+    margin: 12px 0;
+    border-left: 8px solid #d62828;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    font-size: 1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .lcc-logo {
+        width: 65px;
+    }
+}
